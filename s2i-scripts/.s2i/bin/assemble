@@ -11,14 +11,14 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-cp -Rf /tmp/src/*.html /.
+cp -Rf /tmp/src/*.html ./
 
 echo "Installing the source..."
 
 DATE=date "+%b %d,%Y @ %H:%M %p" 
 
-echo " Page is built on $DATE ">> info.html
-echo "HTTPD Versions is 2.4" >> info.html
+echo " Page is built on $DATE ">> ./info.html
+echo "HTTPD Versions is 2.4" >> ./info.html
 
 
 
